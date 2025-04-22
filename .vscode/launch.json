@@ -1,0 +1,40 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Dgmt09e10Application",
+            "request": "launch",
+            "mainClass": "com.tarea9.dgmt09e10.Dgmt09e10Application",
+            "projectName": "dgmt09e10"
+        },
+        {
+            "type": "java",
+            "name": "Dgmt09e01Application",
+            "request": "launch",
+            "mainClass": "com.tarea9.dgmt09e01.Dgmt09e01Application"
+        },
+        {
+            "type": "java",
+            "name": "Dgmt09e03Application",
+            "request": "launch",
+            "mainClass": "com.tarea9.dgmt09e03.Dgmt09e03Application",
+            "projectName": "dgmt05e02"
+        },
+        {
+            "type": "java",
+            "name": "Dgmt05e02Application",
+            "request": "launch",
+            "mainClass": "com.tarea5.dgmt05e02.Dgmt05e02Application"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-Dgmt09Application<dgmt09e02>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.tarea9.dgmt09e02.Dgmt09Application",
+            "projectName": "dgmt09e02",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
