@@ -10,7 +10,7 @@ public interface eService {
     List<Empleado>listAll();
     List<Empleado>listSorted(Genero genero,String val);
     Empleado getById(long id);
-    boolean agregar(Empleado empleado);
-    boolean modificar(Empleado empleado);
+    Empleado agregar(Empleado empleado);
+    Empleado modificar(Empleado empleado);
     boolean borrarPorId(long id);
 }

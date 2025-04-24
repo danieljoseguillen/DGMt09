@@ -1,5 +1,8 @@
 package com.tarea9.dgmt09e11.domain;
 
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 import com.tarea9.dgmt09e11.modelos.Estado;
 import com.tarea9.dgmt09e11.modelos.Genero;
 
@@ -7,6 +10,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
@@ -45,4 +49,8 @@ public class Empleado {
     private Estado estado;
 
     private Genero genero;
+
+    @ManyToOne
+    @OnDelete(action = OnDeleteAction.SET_NULL)
+    private Usuario creador;
 }

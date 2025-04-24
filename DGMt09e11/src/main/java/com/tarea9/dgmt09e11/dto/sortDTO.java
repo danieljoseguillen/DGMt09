@@ -1,4 +1,4 @@
-package com.tarea9.dgmt09e11.domain;
+package com.tarea9.dgmt09e11.dto;
 
 import com.tarea9.dgmt09e11.modelos.Genero;
 

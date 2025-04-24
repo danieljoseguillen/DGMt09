@@ -66,7 +66,7 @@ public class eServiceImpl implements eService {
     public boolean borrarPorId(long id) {
         repositorio.findById(id).orElseThrow(() -> new EmployeeNotFoundException(id));
         repositorio.deleteById(id);
-        if (!repositorio.findById(id).isPresent()) {
+        if (repositorio.findById(id).isPresent()) {
             throw new RuntimeException("No se pudo borrar el empleado.");
         }
         return true;
